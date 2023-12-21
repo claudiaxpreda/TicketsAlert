@@ -1,0 +1,10 @@
+name: '🎫 CSM tickets check'
+description: 'Runs an automated check for available CSM tickets'
+author: 'Claudia Preda'
+runs:
+  using: 'composite'
+  steps:
+    - name: 🏃 Run tickets check
+      uses: DevExpress/testcafe-action@latest
+      with:
+        args: 'chromium:headless tests/ --selector-timeout=20000 -q successThreshold=1 --sf --skip-js-errors --hostname 127.0.0.1'

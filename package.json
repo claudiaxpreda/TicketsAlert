@@ -1,0 +1,11 @@
+{
+  "name": "tickets_alert",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Claudia Preda",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "testcafe": "^2.3.0"
+  }
+}
